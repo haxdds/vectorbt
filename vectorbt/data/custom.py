@@ -775,7 +775,7 @@ class AlpacaData(Data):
                         show_progress: bool = True,
                         params: tp.Optional[dict] = None,
                         tqdm_kwargs: tp.KwargsLike = None) -> tp.Frame:
-        
+        import alpaca_trade_api as alpaca
         pass
 
     def update_symbol(self, symbol: str, **kwargs) -> tp.Frame:
