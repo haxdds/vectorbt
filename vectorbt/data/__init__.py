@@ -15,7 +15,8 @@ __all__ = [
     'GBMData',
     'YFData',
     'BinanceData',
-    'CCXTData'
+    'CCXTData',
+    'AlpacaData'
 ]
 
 __pdoc__ = {k: False for k in __all__}

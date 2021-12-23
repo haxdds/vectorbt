@@ -45,6 +45,7 @@ setup(
             'yfinance>=0.1.63',
             'python-binance',
             'ccxt',
+            'alpaca_trade_api'
             'ray>=1.4.1',
             'ta',
             'pandas_ta',

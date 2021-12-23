@@ -757,3 +757,29 @@ class CCXTData(Data):
         download_kwargs['show_progress'] = False
         kwargs = merge_dicts(download_kwargs, kwargs)
         return self.download_symbol(symbol, **kwargs)
+
+class AlpacaData(Data):
+
+
+    @classmethod
+    def download_symbol(cls,
+                        symbol: str,
+                        exchange: tp.Union[str, "ExchangeT"] = 'binance',
+                        config: tp.Optional[dict] = None,
+                        timeframe: str = '1d',
+                        start: tp.DatetimeLike = 0,
+                        end: tp.DatetimeLike = 'now UTC',
+                        delay: tp.Optional[float] = None,
+                        limit: tp.Optional[int] = 500,
+                        retries: int = 3,
+                        show_progress: bool = True,
+                        params: tp.Optional[dict] = None,
+                        tqdm_kwargs: tp.KwargsLike = None) -> tp.Frame:
+        
+        pass
+
+    def update_symbol(self, symbol: str, **kwargs) -> tp.Frame:
+        """Update the symbol.
+
+        `**kwargs` will override keyword arguments passed to `CCXTData.download_symbol`."""
+        pass
